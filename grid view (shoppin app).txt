@@ -1,0 +1,347 @@
+=>grid view  (shopping appimport 'package:flutter/material.dart';
+
+void main()=>runApp(grid_list());
+
+class grid_list extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+            body: GridView.count(crossAxisCount: 2,
+                children: <Widget>[
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                    ),
+                    child: Stack(
+                      children:<Widget>[
+                      Image.network("https://media.istockphoto.com/photos/young-attractive-happy-couple-hugging-smiling-and-holding-shopping-picture-id1277267181?b=1&k=20&m=1277267181&s=170667a&w=0&h=Ikff2jc6Trv2shwsCOJBIG8Rdgyd7VzWtI0Ihyk8Go8=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                        Container(
+                          margin: EdgeInsets.only(top: 160, left: 90),
+                          height: 30, width: 90,
+                          child: Stack(
+                            children: <Widget>[
+                              ElevatedButton(
+                                onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                              ),
+                              Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                            ],
+                          ),
+
+                        ),
+                     Container(
+                       margin: EdgeInsets.only(top: 160, left: 4),
+                       child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                     )
+
+                      ],
+                    ),
+                  ),
+            ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://cdn.pixabay.com/photo/2016/11/22/19/08/hangers-1850082__340.jpg", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://cdn.pixabay.com/photo/2014/03/08/22/32/escalator-283448__340.jpg", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://cdn.pixabay.com/photo/2017/08/05/00/12/girl-2581913__340.jpg", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://media.istockphoto.com/photos/happy-black-couple-holding-shopping-bags-on-the-street-picture-id1291768316?b=1&k=20&m=1291768316&s=170667a&w=0&h=d-D-4hJzIp4iQIsg-5rYL4ADV2lM_fHVv-N8sBmVH6Y=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://media.istockphoto.com/photos/woman-in-mask-scanning-code-on-products-using-smartphone-picture-id1291771652?b=1&k=20&m=1291771652&s=170667a&w=0&h=zkNzz3KZMyuLN2S9hGJFnbmmAaa6VucQcpeCo0f7ZGA=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://media.istockphoto.com/photos/young-attractive-happy-couple-hugging-smiling-and-holding-shopping-picture-id1277267181?b=1&k=20&m=1277267181&s=170667a&w=0&h=Ikff2jc6Trv2shwsCOJBIG8Rdgyd7VzWtI0Ihyk8Go8=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://media.istockphoto.com/photos/young-attractive-happy-couple-hugging-smiling-and-holding-shopping-picture-id1277267181?b=1&k=20&m=1277267181&s=170667a&w=0&h=Ikff2jc6Trv2shwsCOJBIG8Rdgyd7VzWtI0Ihyk8Go8=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://media.istockphoto.com/photos/young-attractive-happy-couple-hugging-smiling-and-holding-shopping-picture-id1277267181?b=1&k=20&m=1277267181&s=170667a&w=0&h=Ikff2jc6Trv2shwsCOJBIG8Rdgyd7VzWtI0Ihyk8Go8=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+                  Card(
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    elevation: 10.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)
+
+                      ),
+                      child: Stack(
+                        children:<Widget>[
+                          Image.network("https://media.istockphoto.com/photos/young-attractive-happy-couple-hugging-smiling-and-holding-shopping-picture-id1277267181?b=1&k=20&m=1277267181&s=170667a&w=0&h=Ikff2jc6Trv2shwsCOJBIG8Rdgyd7VzWtI0Ihyk8Go8=", width: 200,  height: 160.0, fit: BoxFit.fitHeight,),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 90),
+                            height: 30, width: 90,
+                            child: Stack(
+                              children: <Widget>[
+                                ElevatedButton(
+                                  onPressed: (){debugPrint("Buy Click ");}, child: null,
+
+                                ),
+                                Center(child: Text("Buy Now" ,style: TextStyle(fontSize: 8.0),),)
+                              ],
+                            ),
+
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 160, left: 4),
+                            child: Text("Rs-499",style: TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),),
+                          )
+
+                        ],
+                      ),
+                    ),
+                  ),
+             ]
+            )
+        ));
+  }
+})
